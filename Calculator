@@ -1,2 +1,80 @@
 Console.WriteLine("Muhammad Ehsan");
 Console.WriteLine("Roll no is 24-ST-033");
+public static int AddNumbers(int a, int b)
+{
+    return a + b;
+}
+
+
+You can use this method like this:
+
+
+public class Program
+{
+    public static void Main()
+    {
+        int a = 10;
+        int b = 20;
+        int sum = AddNumbers(a, b);
+        Console.WriteLine("The sum of " + a + " and " + b + " is: " + sum);
+    }
+}
+public static int SubtractNumbers(int a, int b)
+{
+    return a - b;
+}
+
+
+You can use this method like this:
+
+
+public class Program
+{
+    public static void Main()
+    {
+        int a = 20;
+        int b = 10;
+        int difference = SubtractNumbers(a, b);
+        Console.WriteLine("The difference between " + a + " and " + b + " is: " + difference);
+    }
+}
+public static int MultiplyNumbers(int a, int b)
+{
+    return a * b;
+}
+
+
+You can use this method like this:
+
+
+public class Program
+{
+    public static void Main()
+    {
+        int a = 10;
+        int b = 20;
+        int product = MultiplyNumbers(a, b);
+        Console.WriteLine("The product of " + a + " and " + b + " is: " + product);
+    }
+}
+public class Program
+{
+    public static void Main()
+    {
+        double a = 20;
+        double b = 10;
+        try
+        {
+            double quotient = DivideNumbers(a, b);
+            Console.WriteLine("The quotient of " + a + " and " + b + " is: " + quotient);
+        }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}
+
+
+
+
