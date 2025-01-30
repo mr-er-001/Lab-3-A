@@ -57,6 +57,24 @@ public class Program
         Console.WriteLine("The product of " + a + " and " + b + " is: " + product);
     }
 }
+public class Program
+{
+    public static void Main()
+    {
+        double a = 20;
+        double b = 10;
+        try
+        {
+            double quotient = DivideNumbers(a, b);
+            Console.WriteLine("The quotient of " + a + " and " + b + " is: " + quotient);
+        }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}
+
 
 
 
