@@ -38,5 +38,25 @@ public class Program
         Console.WriteLine("The difference between " + a + " and " + b + " is: " + difference);
     }
 }
+public static int MultiplyNumbers(int a, int b)
+{
+    return a * b;
+}
+
+
+You can use this method like this:
+
+
+public class Program
+{
+    public static void Main()
+    {
+        int a = 10;
+        int b = 20;
+        int product = MultiplyNumbers(a, b);
+        Console.WriteLine("The product of " + a + " and " + b + " is: " + product);
+    }
+}
+
 
 
